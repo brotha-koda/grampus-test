@@ -43,7 +43,6 @@ a {
   width: 100%;
   max-width: 1170px;
 }
-
 /* ---- END MAIN ---- */
 
 /* ---- HEADER ---- */
@@ -173,7 +172,6 @@ header {
   border-color: var(--blue);
   color: var(--blue);
 }
-
 /* ---- HEADER END ---- */
 
 /* ---- INTRO ---- */
