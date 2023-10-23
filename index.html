@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/images/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORION</title>
+    <title>ОРИОН - Строительные материалы</title>
   </head>
   <body>
     <!-- HEADER -->
-
     <header class="wrapper">
       <a href="#">
         <img
@@ -64,7 +88,7 @@
           <a href="#">Контакты</a>
         </nav>
       </div>
-      <button class="header_button">Заказать звонок</button>
+      <button class="button-blue">Заказать звонок</button>
     </header>
     <!-- HEADER END -->
 
@@ -225,5 +249,95 @@
       </div>
     </div>
     <!-- CATEGORIES END -->
+
+    <!-- FORM -->
+    <form class="form wrapper" method="post" action="#">
+      <img
+        src="assets/images/form/form-background.png"
+        alt="form-background"
+        class="form-back_image"
+      />
+      <div class="form_content">
+        <div class="form_content-text">
+          <h2>Не нашли нужную категорию материала?</h2>
+          <p>
+            Оставьте номер телефона, мы перезвоним в течение рабочего дня и
+            проконсультируем по всем вопросам
+          </p>
+        </div>
+        <div class="form_content-fields">
+          <input type="text" placeholder="Ваше имя" name="username" />
+          <input
+            type="text"
+            placeholder="Номер телефона*"
+            name="number-phone"
+          />
+        </div>
+        <div class="form_content-bottom">
+          <div class="form_content-bottom-hint">
+            <p>*Нажимая на кнопку, Вы соглашаетесь</p>
+            <a href="#">на обработку персональных данных</a>
+          </div>
+          <button type="submit" class="button-blue">Отправить</button>
+        </div>
+      </div>
+    </form>
+    <!-- FORM END -->
+
+    <div class="goal wrapper">
+      <h2>
+        ООО «ОРИОН» — мы ценим своих клиентов и их время, потому что знаем, как
+        для них это важно
+      </h2>
+      <div class="goal_content">
+        <div class="goal_content-left">
+          <div class="goal_content-left-card">
+            <div class="goal_content-left-card-block">
+              <img src="assets/images/goal/star-blue.svg" alt="star-blue" />
+            </div>
+            <h4>Миссия</h4>
+            <p>
+              Мы стремимся создать все условия, чтобы наши клиенты получили
+              максимальную выгоду от сотрудничества с нами
+            </p>
+          </div>
+          <div class="goal_content-left-card">
+            <div class="goal_content-left-card-block">
+              <img src="assets/images/goal/mark-blue.svg" alt="mark-blue" />
+            </div>
+            <h4>Цель</h4>
+            <p>
+              Обеспечить выполнение заказов в минимальные сроки по выгодной цене
+            </p>
+          </div>
+        </div>
+        <div class="goal_content-right">
+          <p>Профиль нашей компании – снабжение:</p>
+          <ul>
+            <li>Строительными и отделочными материалами</li>
+            <li>Поставкой крепежных изделий</li>
+            <li>Ручного инструмента</li>
+            <li>Оснастками для электроинструмента и т.д.</li>
+          </ul>
+          <p>
+            Работаем как оптом, так и в розницу. Обеспечим своевременную
+            доставку по Санкт- Петербургу и Северо-Западному региону, по Москве
+            и Московской области
+          </p>
+          <p>
+            Компания ООО «Орион» активно работает на рынке продаж с 2015года. За
+            время работы мы установили прочные взаимоотношениями с клиентами. Мы
+            открыты для сотрудничества и активно ищем новых заказчиков
+          </p>
+          <p>
+            Мы тщательно отслеживаем все новинки товара для более полного и
+            качественного обслуживания. Для увеличения потребительской аудитории
+            способствует лояльная ценовая политика и принципы индивидуального
+            обслуживания в каждом отдельном случае
+          </p>
+        </div>
+      </div>
+      <img class="goal_back" src="assets/images/goal/lines.svg" alt="lines" />
+    </div>
   </body>
 </html>
