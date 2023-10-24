@@ -26,6 +26,10 @@
       href="assets/images/icons/safari-pinned-tab.svg"
       color="#5bbad5"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,77 +37,89 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="wrapper">
-      <a href="#">
-        <img
-          class="header_logo"
-          src="assets/images/header/logo.png"
-          alt="logo"
-        />
-      </a>
-      <div class="header_center">
-        <div class="header_top">
-          <div class="header-top_left">
-            <div class="header-top_social">
-              <img
-                src="assets/images/header/message-fill-blue-white.svg"
-                alt="mail"
-              />
-              <a href="#">
-                <span>info@orion.ru</span>
-              </a>
+    <header>
+      <div class="wrapper">
+        <div class="header_content">
+          <a href="#">
+            <img
+              class="header_logo"
+              src="assets/images/header/logo.png"
+              alt="logo"
+            />
+          </a>
+          <div class="header_center">
+            <div class="header_top">
+              <div class="header-top_left">
+                <div class="header-top_social">
+                  <img
+                    src="assets/images/header/message-fill-blue-white.svg"
+                    alt="mail"
+                  />
+                  <a href="#">
+                    <span>info@orion.ru</span>
+                  </a>
+                </div>
+                <div class="header-top_social">
+                  <img
+                    src="assets/images/header/phone-fill-blue-white.svg"
+                    alt="phone"
+                  />
+                  <a href="#">
+                    <span>8 994 432-68-46</span>
+                  </a>
+                </div>
+              </div>
+              <div class="header-top_right">
+                <a href="#">
+                  <img
+                    src="assets/images/header/whatsapp-fill-blue.svg"
+                    alt="whatsapp"
+                  />
+                  <img
+                    src="assets/images/header/whatsapp-fill-black.svg"
+                    alt="whatsapp"
+                    class="header-top_right-back"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/images/header/telegram-fill-blue.svg"
+                    alt="telegram"
+                  />
+                  <img
+                    src="assets/images/header/telegram-fill-black.svg"
+                    alt="telegram"
+                    class="header-top_right-back"
+                  />
+                </a>
+              </div>
             </div>
-            <div class="header-top_social">
-              <img
-                src="assets/images/header/phone-fill-blue-white.svg"
-                alt="phone"
-              />
-              <a href="#">
-                <span>8 994 432-68-46</span>
-              </a>
-            </div>
+            <div class="header-center_line"></div>
+            <nav class="header_bottom">
+              <a href="#">Услуги</a>
+              <a href="#">О компании</a>
+              <a href="#">Сертификаты</a>
+              <a href="#">Отзывы</a>
+              <a href="#">Вопрос – ответ</a>
+              <a href="#">Контакты</a>
+            </nav>
           </div>
-          <div class="header-top_right">
-            <a href="#">
-              <img
-                src="assets/images/header/whatsapp-fill-blue.svg"
-                alt="whatsapp"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="assets/images/header/telegram-fill-blue.svg"
-                alt="telegram"
-              />
-            </a>
-          </div>
+          <button class="button-blue">Заказать звонок</button>
         </div>
-        <div class="header-center_line"></div>
-        <nav class="header_bottom">
-          <a href="#">Услуги</a>
-          <a href="#">О компании</a>
-          <a href="#">Сертификаты</a>
-          <a href="#">Отзывы</a>
-          <a href="#">Вопрос – ответ</a>
-          <a href="#">Контакты</a>
-        </nav>
       </div>
-      <button class="button-blue">Заказать звонок</button>
     </header>
     <!-- HEADER END -->
 
     <!-- INTRO -->
+
     <div class="intro">
       <div class="wrapper">
         <div class="intro_content">
-          <h1 class="intro_title">Снабжение строительных объектов</h1>
-          <h2 class="intro_subtitle">
+          <h1>Снабжение строительных объектов</h1>
+          <p>
             Предоставляем материалы по Москве, Санкт-Петербургу и их областям
-          </h2>
-          <button class="intro_btn">Бесплатная консультация</button>
-        </div>
-        <div class="intro_building">
-          <img src="assets/images/intro/building.png" alt="building" />
+          </p>
+          <a href="#">Бесплатная консультация</a>
         </div>
       </div>
     </div>
@@ -114,138 +130,280 @@
       <div class="categories_header">
         <h2>Категории материалов</h2>
         <div class="categories_arrows">
-          <div class="categories_arrows-item">
+          <div class="categories_arrows-item categories_arrows-item-prev">
             <img
               class="categories-arrow_prev arrow-back"
               src="assets/images/categories/arrow-fill-black.svg"
               alt="arrow"
             />
             <img
-              class="categories-arrow_prev arrow-front"
+              class="categories-arrow_prev arrow-front swiper-button-prev"
               src="assets/images/categories/arrow-fill-blue.svg"
               alt="arrow"
             />
           </div>
-          <div class="categories_arrows-item">
+          <div class="categories_arrows-item categories_arrows-item-next">
             <img
               class="categories-arrow_next arrow-back"
               src="assets/images/categories/arrow-fill-black.svg"
               alt="arrow"
             />
             <img
-              class="categories-arrow_next arrow-front"
+              class="categories-arrow_next arrow-front swiper-button-next"
               src="assets/images/categories/arrow-fill-blue.svg"
               alt="arrow"
             />
           </div>
         </div>
       </div>
-      <div class="categories_content">
-        <!-- 1 -->
-        <a class="categories-content_card" href="#">
-          <div class="categories-content_images">
-            <div class="card-images_ellipses">
+      <div class="categories_content swiper-container">
+        <div class="categories_content-wrapper swiper-wrapper">
+          <!-- 1 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
               <img
-                src="assets/images/categories/ellipse-fill-blue.svg"
-                alt="ellipse-blue"
-              />
-              <img
-                class="card-images-ellipse_front"
-                src="assets/images/categories/ellipse-fill-white.svg"
-                alt="ellipse-white"
-              />
-            </div>
-            <img
-              class="card_front-image"
-              src="assets/images/categories/wood-boards.png"
-              alt="card_front-image"
-            />
-          </div>
-          <div class="categories-content_bottom">
-            <h3>Строительные материалы</h3>
-            <div class="card-bottom_arrow">
-              <img
-                src="assets/images/categories/arrow-fill-white.svg"
-                alt="arrow-fill-white"
-              />
-              <img
-                class="card-bottom_arrow-front"
-                src="assets/images/categories/arrow-fill-blue.svg"
-                alt="arrow-fill-blue"
+                class="card_front-image"
+                src="assets/images/categories/wood-boards.png"
+                alt="card_front-image"
               />
             </div>
-          </div>
-        </a>
-        <!-- 2 -->
-        <a class="categories-content_card" href="#">
-          <div class="categories-content_images">
-            <div class="card-images_ellipses">
+            <div class="categories-content_bottom">
+              <h3>Строительные материалы</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 2 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
               <img
-                src="assets/images/categories/ellipse-fill-blue.svg"
-                alt="ellipse-blue"
-              />
-              <img
-                class="card-images-ellipse_front"
-                src="assets/images/categories/ellipse-fill-white.svg"
-                alt="ellipse-white"
+                class="card_front-image"
+                src="assets/images/categories/fasteners.png"
+                alt="card_front-image"
               />
             </div>
-            <img
-              class="card_front-image"
-              src="assets/images/categories/fasteners.png"
-              alt="card_front-image"
-            />
-          </div>
-          <div class="categories-content_bottom">
-            <h3>Крепёжные инструменты</h3>
-            <div class="card-bottom_arrow">
+            <div class="categories-content_bottom">
+              <h3>Крепёжные инструменты</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 3 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
               <img
-                src="assets/images/categories/arrow-fill-white.svg"
-                alt="arrow-fill-white"
-              />
-              <img
-                class="card-bottom_arrow-front"
-                src="assets/images/categories/arrow-fill-blue.svg"
-                alt="arrow-fill-blue"
+                class="card_front-image"
+                src="assets/images/categories/finishing-materials.png"
+                alt="card_front-image"
               />
             </div>
-          </div>
-        </a>
-        <!-- 3 -->
-        <a class="categories-content_card" href="#">
-          <div class="categories-content_images">
-            <div class="card-images_ellipses">
+            <div class="categories-content_bottom">
+              <h3>Отделочные материалы</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 4 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
               <img
-                src="assets/images/categories/ellipse-fill-blue.svg"
-                alt="ellipse-blue"
-              />
-              <img
-                class="card-images-ellipse_front"
-                src="assets/images/categories/ellipse-fill-white.svg"
-                alt="ellipse-white"
+                class="card_front-image"
+                src="assets/images/categories/big-nose.jpg"
+                alt="card_front-image"
               />
             </div>
-            <img
-              class="card_front-image"
-              src="assets/images/categories/finishing-materials.png"
-              alt="card_front-image"
-            />
-          </div>
-          <div class="categories-content_bottom">
-            <h3>Отделочные материалы</h3>
-            <div class="card-bottom_arrow">
+            <div class="categories-content_bottom">
+              <h3>Блоки и фундамент</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 5 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
               <img
-                src="assets/images/categories/arrow-fill-white.svg"
-                alt="arrow-fill-white"
-              />
-              <img
-                class="card-bottom_arrow-front"
-                src="assets/images/categories/arrow-fill-blue.svg"
-                alt="arrow-fill-blue"
+                class="card_front-image"
+                src="assets/images/categories/gentleman.png"
+                alt="card_front-image"
               />
             </div>
-          </div>
-        </a>
+            <div class="categories-content_bottom">
+              <h3>Брендовые образцы</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 6 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
+              <img
+                class="card_front-image"
+                src="assets/images/categories/gigachad.jpg"
+                alt="card_front-image"
+              />
+            </div>
+            <div class="categories-content_bottom">
+              <h3>Огузки</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+          <!-- 7 -->
+          <a class="categories-content_card swiper-slide" href="#">
+            <div class="categories-content_images">
+              <div class="card-images_ellipses">
+                <img
+                  src="assets/images/categories/ellipse-fill-blue.svg"
+                  alt="ellipse-blue"
+                />
+                <img
+                  class="card-images-ellipse_front"
+                  src="assets/images/categories/ellipse-fill-white.svg"
+                  alt="ellipse-white"
+                />
+              </div>
+              <img
+                class="card_front-image"
+                src="assets/images/categories/epic-saul-goodman.gif"
+                alt="card_front-image"
+              />
+            </div>
+            <div class="categories-content_bottom">
+              <h3>????????????????????</h3>
+              <div class="card-bottom_arrow">
+                <img
+                  src="assets/images/categories/arrow-fill-white.svg"
+                  alt="arrow-fill-white"
+                />
+                <img
+                  class="card-bottom_arrow-front"
+                  src="assets/images/categories/arrow-fill-blue.svg"
+                  alt="arrow-fill-blue"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <!-- CATEGORIES END -->
@@ -339,5 +497,19 @@
       </div>
       <img class="goal_back" src="assets/images/goal/lines.svg" alt="lines" />
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
   </body>
 </html>
