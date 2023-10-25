@@ -1,0 +1,45 @@
+/* 1200 */
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 25px;
+    width: calc(100% - 50px);
+  }
+}
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+  /* FORM */
+  .form_content {
+    max-width: none;
+  }
+
+  .form_content-fields {
+    flex-direction: column;
+  }
+
+  .form_content-fields {
+    gap: 20px;
+  }
+  .form_content-fields input {
+    width: -webkit-fill-available;
+  }
+
+  .form_content-bottom {
+    flex-direction: column;
+  }
+
+  /* GOAL */
+  .goal_content {
+    flex-direction: column;
+  }
+
+  .goal_content-left-card {
+    width: auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .goal_content-left-card-block {
+    top: 20%;
+  }
+}
